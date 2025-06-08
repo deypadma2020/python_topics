@@ -1,0 +1,32 @@
+[
+    {
+        "identifier": "padma@klizos.com",
+        "password": "P@swrd1209!",
+        "type": "email"
+    },
+    {
+        "identifier": "padmaa@klizos.com",
+        "password": "mypassword",
+        "type": "email"
+    },
+    {
+        "identifier": "paddma@klizos.com",
+        "password": "abcdeff",
+        "type": "email"
+    },
+    {
+        "identifier": "7063315080",
+        "password": "mypassword",
+        "type": "mobile"
+    },
+    {
+        "identifier": "deypadma",
+        "password": "mypassword",
+        "type": "username"
+    },
+    {
+        "identifier": "klizo",
+        "password": "gfdsrdgfea",
+        "type": "username"
+    }
+]

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - FreshApp</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #4a90e2, #87cefa); /* Blue shades */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        p {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+        button {
+            padding: 10px 20px;
+            background: #6e8efb;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #5a78e0;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to FreshApp!</h1>
+        <p>Login successful! Enjoy your time here.</p>
+        <button onclick="window.location.href='/'">Logout</button>
+    </div>
+</body>
+</html>
