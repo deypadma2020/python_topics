@@ -1,15 +1,16 @@
-from pydantic import BaseModel, EmailStr, AnyUrl,Field
-from typing import List, Dict, Optional
+from pydantic import BaseModel, EmailStr, StrictInt, AnyUrl, Field
+from typing import List, Dict, Optional, Annotated
 
 class Patient(BaseModel):
     name: str = Field(max_length=50)
     age: int = Field(gt=0,lt=150)
-    weight: float
-    email: EmailStr
+    weight: Annotated[float, Field(gt=0, strict=True)]
+    email: Annotated[EmailStr, Field(title='Email of the Patient', description="Provide a valid email id", examples=['padma.dey@empeal.com', 'padma@klizos.com'])]
     linkedin: AnyUrl
+    phone_no: Annotated[Optional[StrictInt], Field(max_digits=10)]
     married: Optional[bool] = False
-    allergies: Optional[List[str]]
-    contact_details: Dict[str, str]
+    allergies: Annotated[Optional[List[str]], Field(default=None, max_length=10, description="It's an optional field")]
+    contact_details: Optional[Dict[str, str]]
 
 patient_info = {
     'name': 'Ross',
