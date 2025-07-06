@@ -3,6 +3,7 @@ from pydantic import BaseModel
 class Patient(BaseModel):
     name: str
     age: int
+    weight: int
 print("------------------------------------------")
 
 # def insert_patient_data(name: str, age: int):
