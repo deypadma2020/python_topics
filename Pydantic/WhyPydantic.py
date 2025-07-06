@@ -1,7 +1,10 @@
 def insert_patient_data(name: str, age: int):
-    print(name)
-    print(age)
-    print("Data inserted")
+    if type(name) == str and type(age) == int:
+        print(name)
+        print(age)
+        print("Data inserted")
+    else:
+        raise TypeError("Incorrect DataType")
 
 insert_patient_data("Rajesh", 35)
 insert_patient_data("Rajesh", '35')
