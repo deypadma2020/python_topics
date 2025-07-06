@@ -4,3 +4,4 @@ def insert_patient_data(name: str, age: int):
     print("Data inserted")
 
 insert_patient_data("Rajesh", 35)
+insert_patient_data("Rajesh", '35')
