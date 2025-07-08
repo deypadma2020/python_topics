@@ -1,1 +1,3 @@
 pydantic
+pydantic[email]
+# pip install pydantic[email]
