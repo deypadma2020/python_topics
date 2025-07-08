@@ -43,7 +43,7 @@ def update_patient_data(patient: Patient):
     print("Patient data updated successfully")
 
 patient_info = {
-    'name':'nitish', 
+    'name':'Suman', 
     'email':'abc@klizos.com', 
     'age': '30', 
     'weight': 75.2, 
